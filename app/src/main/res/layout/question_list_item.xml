@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card-view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/novel_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card-view:cardBackgroundColor="@color/novel_item_white"
+        card-view:cardElevation="2dp"
+        card-view:cardPreventCornerOverlap="true"
+        card-view:cardUseCompatPadding="true"
+        card-view:cardMaxElevation="2dp">
+
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:minHeight="112dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/tv_info"
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider"
+                    android:adjustViewBounds="true"
+                    android:minHeight="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Loading"
+                    android:maxLines="4"
+                    android:textSize="12sp"
+                    android:textColor="@color/novel_item_text"/>
+
+
+                <TextView
+                    android:ellipsize="middle"
+                    android:id="@+id/tv_body"
+                    android:transitionName="novel_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Loading"
+                    android:layout_marginRight="36dp"
+                    android:textColor="@color/novel_item_title"
+                    android:singleLine="true"
+                    android:layout_alignBottom="@+id/cb_check"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/cb_check"
+                    android:background="@color/default_divider"/>
+
+                <CheckBox
+                    android:gravity="bottom"
+                    android:id="@+id/cb_check"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="2dp"
+
+                    android:background="@color/menu_transparent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        <!--</LinearLayout>-->
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

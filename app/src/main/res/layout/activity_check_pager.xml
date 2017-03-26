@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".context.activity.QuestionPagerActivity"
+    >
+    <LinearLayout
+        android:id="@+id/ll_check_btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_yes"
+            style="@style/CheckBtnGroup"
+            android:text="@string/label_btn_true" />
+
+        <Button
+            android:id="@+id/btn_not_sure"
+            style="@style/CheckBtnGroup"
+            android:text="@string/label_btn_not_sure" />
+
+        <Button
+            android:id="@+id/btn_no"
+            style="@style/CheckBtnGroup"
+            android:text="@string/label_btn_false" />
+
+    </LinearLayout>
+   <android.support.v4.view.ViewPager
+        android:id="@+id/vp_check"
+        android:layout_above="@id/ll_check_btn_group"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+       />
+
+</RelativeLayout>
+

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">本体验证</string>
+
+    <string name="tip_exit_app">双击退出</string>
+    <string name="action_sign_in">登录</string>
+
+    <string name="label_btn_true">对</string>
+    <string name="label_btn_not_sure">\?</string>
+    <string name="label_btn_false">错</string>
+    <string name="menu_item_sync_title">同步</string>
+    <string name="start_sync">开始同步</string>
+    <string name="success_sync">同步完成</string>
+    <string name="failed_sync">同步失败:(</string>
+    <string name="check_update">检查更新</string>
+    <string name="config_choose_language">更改语言</string>
+    <string name="config_check_update">检查更新</string>
+    <string name="config_about">关于</string>
+    <string name="config_clear_cache">清空缓存</string>
+    <string name="fragment_list_title">问题列表</string>
+    <string name="fragment_statistics_title">统计</string>
+    <string name="fragment_user_username">用户名</string>
+    <string name="fragment_user_sign">签名</string>
+    <string name="fragment_user_settings">设置</string>
+    <string name="fragment_user_change_wallpaper">更改壁纸</string>
+    <string name="fragment_user_title">用户信息</string>
+    <string name="activity_main_list_item">列表</string>
+    <string name="activity_main_item_statistics">统计</string>
+    <string name="activity_main_item_user">用户</string>
+    <string name="email_or_username">用户名/邮箱</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_register">还没有账号？创建一个</string>
+    <string name="version">Version 1.0.0 beta</string>
+    <string name="clear_cache_result">清理完毕！</string>
+    <string name="check_update_result">此应用即为最新版本</string>
+    <string name="copyright">Copyright ©swu.edu.cn, all rights reserved</string>
+    <string name="activity_login_text">登录</string>
+    <string name="menu_item_detail_text">更多</string>
+    <string name="menu_item_more_title">更多</string>
+    <string name="materials_about_question">相关资料</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_graph">Show Graph</string>
+    <string name="true_label">True</string>
+    <string name="false_label">False</string>
+    <string name="not_sure_label">Not Sure</string>
+    <string name="not_checked_label">Not Checked</string>
+
+</resources>

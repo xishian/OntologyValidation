@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_user_background"
+        android:background="@drawable/ic_user_backgroud"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="0.618">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/user_avatar"
+            android:layout_height="72dp"
+            android:layout_width="72dp"
+            android:src="@drawable/ic_noavatar"
+            android:scaleType="fitXY"
+            app:riv_border_color="@color/default_white"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:id="@+id/tv_fragment_user_username"
+            android:layout_below="@id/user_avatar"
+            android:textColor="#ffffff"
+            android:text="@string/fragment_user_username"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:layout_below="@id/tv_fragment_user_username"
+            android:id="@+id/tv_fragment_user_statement"
+            android:textColor="#ffffff"
+            android:text="@string/fragment_user_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+
+            <!-- Layout ClearCache -->
+            <RelativeLayout
+                android:id="@+id/btn_fragment_user_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:background="@drawable/btn_menu_item">
+                <ImageView
+                    android:id="@+id/image_clearcache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_clearcache"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/image_clearcache"
+                    android:textColor="@color/dlgTitleColor"
+                    android:text="@string/config_clear_cache"/>
+            </RelativeLayout>
+            <!-- Layout CheckUpdate -->
+            <RelativeLayout
+                android:id="@+id/btn_fragment_user_check_update"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:background="@drawable/btn_menu_item">
+                <ImageView
+                    android:id="@+id/image_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_update"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/image_update"
+                    android:textColor="@color/dlgTitleColor"
+                    android:text="@string/config_check_update"/>
+
+            </RelativeLayout>
+
+            <!-- Layout Language -->
+            <RelativeLayout
+                android:id="@+id/btn_fragment_user_settings"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:background="@drawable/btn_menu_item">
+                <ImageView
+                    android:id="@+id/image_chooselanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_config"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/image_chooselanguage"
+                    android:textColor="@color/dlgTitleColor"
+                    android:text="@string/fragment_user_settings"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rightarrow"
+                    android:paddingRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+
+            <!-- Layout NavigationDrawerWallpaper -->
+            <RelativeLayout
+                android:id="@+id/btn_fragment_user_change_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:background="@drawable/btn_menu_item">
+                <ImageView
+                    android:id="@+id/image_wallpaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_wallpaper"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/image_wallpaper"
+                    android:textColor="@color/dlgTitleColor"
+                    android:text="@string/fragment_user_change_wallpaper"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rightarrow"
+                    android:paddingRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+
+            <!-- Layout About -->
+            <RelativeLayout
+                android:id="@+id/btn_fragment_user_about"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:background="@drawable/btn_menu_item">
+                <ImageView
+                    android:id="@+id/image_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_about"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/image_about"
+                    android:textColor="@color/dlgTitleColor"
+                    android:text="@string/config_about"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rightarrow"
+                    android:paddingRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</LinearLayout>

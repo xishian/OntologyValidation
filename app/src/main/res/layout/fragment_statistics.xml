@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card-view="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:text="@string/show_graph"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_margin="6dp"
+        android:textColor="@color/default_white"
+        android:background="@drawable/selector_check_btn"
+        android:id="@+id/btn_fragment_statistics_show_graph"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_above="@id/btn_fragment_statistics_show_graph"
+        android:id="@+id/lv_count"
+        android:background="#ffffff"
+        android:dividerHeight="5dp"
+        android:divider="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+</RelativeLayout>
